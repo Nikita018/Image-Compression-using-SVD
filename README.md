@@ -10,16 +10,4 @@ images.
 The fundamental concept of the SVD-based image compression scheme is to use a smaller number of rank to approximate the original matrix
 
 
-We know that any matrix can be decomposed into the summation of rank-1 matrices:
-A = USV T = u1S1vT1
-+ u2S2vT2
-+    + urSrvTr
-;
-where S is a singular value, u and v are singular vectors, and r is the rank of matrix A.
-To compress an image you simply truncate the sum at the pth singular value:
-A  u11vT1
-+ u22vT2
-+    + uppvTp
-;
-where p < r. What this means is that instead of storing the entire image matrix, we only need to store a small number of vectors and their
-associated singular values to create an approximation of an image.
+
